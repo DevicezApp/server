@@ -1,0 +1,32 @@
+{
+  "name": "devicez/server",
+  "type": "project",
+  "description": "DeviceZ open-source device management system",
+  "homepage": "https://devicez.de",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "codeigniter4/framework": "^4.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.9",
+    "mikey179/vfsstream": "^1.6",
+    "phpunit/phpunit": "^9.1"
+  },
+  "suggest": {
+    "ext-fileinfo": "Improves mime type detection for files"
+  },
+  "autoload": {
+    "exclude-from-classmap": [
+      "**/Database/Migrations/**"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Support\\": "tests/_support"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}

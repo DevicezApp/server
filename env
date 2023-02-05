@@ -1,0 +1,47 @@
+#--------------------------------------------------------------------
+#
+# DeviceZ - open-source device management system
+#
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#
+# Define whether this application is running in a production environment or a development environment.
+# (possible values are: production, development)
+#--------------------------------------------------------------------
+
+CI_ENVIRONMENT = production
+
+#--------------------------------------------------------------------
+# APP
+#
+# Define the base-url for your application.
+#--------------------------------------------------------------------
+
+app.baseURL = ''
+
+#--------------------------------------------------------------------
+# DATABASE
+#
+# Define the credentials for your MySQL/MariaDB database.
+#--------------------------------------------------------------------
+
+database.default.hostname = localhost
+database.default.database = devicez
+database.default.username = devicez
+database.default.password = devicez
+database.default.DBDriver = MySQLi
+database.default.DBPrefix =
+database.default.port = 3306
+
+#--------------------------------------------------------------------
+# REDIS
+#
+# Define the credentials for your Redis server.
+#--------------------------------------------------------------------
+
+redis.hostname = localhost
+redis.port = 6379
+redis.username = devicez
+redis.password = devicez
